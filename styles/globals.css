@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme{--color-blue:#1b3dff;--color-ink:#0a0a0a;--color-mute:#6b7280;--font-serif:var(--font-instrument),Georgia,serif;--font-sans:var(--font-inter),system-ui,sans-serif}
+html{background:#fff;color:#0a0a0a}
+body{font-family:var(--font-sans);overflow-x:hidden}
+.display{font-family:var(--font-serif);font-size:clamp(3.2rem,11vw,10rem);line-height:.88;letter-spacing:-.03em}
+.h2{font-family:var(--font-serif);font-size:clamp(2.2rem,6vw,5.2rem);line-height:.95;letter-spacing:-.02em}
+.mono{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-mute)}
+.grain{background-image:radial-gradient(rgba(27,61,255,.12) 1px,transparent 1px);background-size:6px 6px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(pointer:fine){body,a,button{cursor:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--color-blue);outline-offset:3px}
